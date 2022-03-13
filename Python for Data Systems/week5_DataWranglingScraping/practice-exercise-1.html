@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+		<style>
+			body{
+				background-color: whitesmoke;
+			}
+			.table {
+			margin: auto;
+			width: 85% !important; 
+			}
+			tbody {
+			font-family: 'Open Sans';font-size: 16px;
+			text-align: left;
+			align-items: left;
+			}
+			thead {
+			font-family: 'Open Sans';font-size: 16px; font-weight: 600;   
+			text-align: center;
+			align-items: center;
+			align-content: center;
+			}
+			th {
+			text-align: center;
+			}
+			h2{
+			font-family: 'Roboto'; font-weight: 600;
+			}
+			h4{
+			font-family: 'Open Sans'; font-weight: 600;
+			}
+			/* Rules for icon sizes: */
+			.material-icons.md-18 { font-size: 18px; }
+			.material-icons.md-24 { font-size: 24px; } /* Default */
+			.material-icons.md-36 { font-size: 36px; }
+			.material-icons.md-48 { font-size: 48px; }
+			.material-icons.md-72 { font-size: 72px; }
+			.material-icons.md-144 { font-size: 144px; }
+		</style>
+		<title>Practice Exercise 1</title>
+	</head>
+	<body>
+		<center>
+			<h2>Practice Exercise 1</h2>
+			<span class="material-icons md-48">developer_board</span>
+			<br><br>
+		</center>
+		<table class="table table-bordered table-hover" id="sortTable">
+			<thead class="colheader">
+				<tr>
+					<th>Product Name</th>
+					<th>GPU Chip</th>
+					<th>Released</th>
+					<th>Bus</th>
+					<th>Memory</th>
+					<th>GPU clock</th>
+					<th>Memory clock</th>
+					<th>Shaders / TMUs / ROPs</th>
+				</tr>
+			</thead>
+			<tbody><tr>
+					<td class="model">GeForce RTX 3060</td>
+					<td class="chip">GA106</td>
+					<td class="release-date">Jan 12th, 2021</td>
+					<td class="bus">PCIe 4.0 x16</td>
+					<td class="memory">12 GB, GDDR6, 192 bit</td>
+					<td class="gpu-clock">1320 MHz</td>
+					<td class="memory-clock">1875 MHz</td>
+					<td class="cores">3584 / 112 / 48</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce RTX 3090</td>
+					<td class="chip">GA102</td>
+					<td class="release-date">Sep 1st, 2020</td>
+					<td class="bus">PCIe 4.0 x16</td>
+					<td class="memory">24 GB, GDDR6X, 384 bit</td>
+					<td class="gpu-clock">1395 MHz</td>
+					<td class="memory-clock">1219 MHz</td>
+					<td class="cores">10496 / 328 / 112</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce RTX 3060 Ti</td>
+					<td class="chip">GA104</td>
+					<td class="release-date">Dec 1st, 2020</td>
+					<td class="bus">PCIe 4.0 x16</td>
+					<td class="memory">8 GB, GDDR6, 256 bit</td>
+					<td class="gpu-clock">1410 MHz</td>
+					<td class="memory-clock">1750 MHz</td>
+					<td class="cores">4864 / 152 / 80</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce GTX 1050 Ti</td>
+					<td class="chip">GP107</td>
+					<td class="release-date">Oct 25th, 2016</td>
+					<td class="bus">PCIe 3.0 x16</td>
+					<td class="memory">4 GB, GDDR5, 128 bit</td>
+					<td class="gpu-clock">1291 MHz</td>
+					<td class="memory-clock">1752 MHz</td>
+					<td class="cores">768 / 48 / 32</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce RTX 3080</td>
+					<td class="chip">GA102</td>
+					<td class="release-date">Sep 1st, 2020</td>
+					<td class="bus">PCIe 4.0 x16</td>
+					<td class="memory">10 GB, GDDR6X, 320 bit</td>
+					<td class="gpu-clock">1440 MHz</td>
+					<td class="memory-clock">1188 MHz</td>
+					<td class="cores">8704 / 272 / 96</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce RTX 3070</td>
+					<td class="chip">GA104</td>
+					<td class="release-date">Sep 1st, 2020</td>
+					<td class="bus">PCIe 4.0 x16</td>
+					<td class="memory">8 GB, GDDR6, 256 bit</td>
+					<td class="gpu-clock">1500 MHz</td>
+					<td class="memory-clock">1750 MHz</td>
+					<td class="cores">5888 / 184 / 96</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce GTX 970</td>
+					<td class="chip">GM204</td>
+					<td class="release-date">Sep 19th, 2014</td>
+					<td class="bus">PCIe 3.0 x16</td>
+					<td class="memory">4 GB, GDDR5, 256 bit</td>
+					<td class="gpu-clock">1050 MHz</td>
+					<td class="memory-clock">1753 MHz</td>
+					<td class="cores">1664 / 104 / 56</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce GTX 750 Ti</td>
+					<td class="chip">GM107</td>
+					<td class="release-date">Feb 18th, 2014</td>
+					<td class="bus">PCIe 3.0 x16</td>
+					<td class="memory">2 GB, GDDR5, 128 bit</td>
+					<td class="gpu-clock">1020 MHz</td>
+					<td class="memory-clock">1350 MHz</td>
+					<td class="cores">640 / 40 / 16</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce GTX 960</td>
+					<td class="chip">GM206</td>
+					<td class="release-date">Jan 22nd, 2015</td>
+					<td class="bus">PCIe 3.0 x16</td>
+					<td class="memory">2 GB, GDDR5, 128 bit</td>
+					<td class="gpu-clock">1127 MHz</td>
+					<td class="memory-clock">1753 MHz</td>
+					<td class="cores">1024 / 64 / 32</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce GTX 1650</td>
+					<td class="chip">TU117</td>
+					<td class="release-date">Apr 23rd, 2019</td>
+					<td class="bus">PCIe 3.0 x16</td>
+					<td class="memory">4 GB, GDDR5, 128 bit</td>
+					<td class="gpu-clock">1485 MHz</td>
+					<td class="memory-clock">2001 MHz</td>
+					<td class="cores">896 / 56 / 32</td>
+				</tr>
+            <tr>
+					<td class="model">UHD Graphics 770</td>
+					<td class="chip">Alder Lake GT1</td>
+					<td class="release-date">Nov 4th, 2021</td>
+					<td class="bus">Ring Bus</td>
+					<td class="memory">System Shared</td>
+					<td class="gpu-clock">300 MHz</td>
+					<td class="memory-clock">System Shared</td>
+					<td class="cores">256 / 16 / 8</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce GTX 1060 6 GB</td>
+					<td class="chip">GP106</td>
+					<td class="release-date">Jul 19th, 2016</td>
+					<td class="bus">PCIe 3.0 x16</td>
+					<td class="memory">6 GB, GDDR5, 192 bit</td>
+					<td class="gpu-clock">1506 MHz</td>
+					<td class="memory-clock">2002 MHz</td>
+					<td class="cores">1280 / 80 / 48</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce RTX 2060</td>
+					<td class="chip">TU106</td>
+					<td class="release-date">Jan 7th, 2019</td>
+					<td class="bus">PCIe 3.0 x16</td>
+					<td class="memory">6 GB, GDDR6, 192 bit</td>
+					<td class="gpu-clock">1365 MHz</td>
+					<td class="memory-clock">1750 MHz</td>
+					<td class="cores">1920 / 120 / 48</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce RTX 3080 Ti</td>
+					<td class="chip">GA102</td>
+					<td class="release-date">May 31st, 2021</td>
+					<td class="bus">PCIe 4.0 x16</td>
+					<td class="memory">12 GB, GDDR6X, 384 bit</td>
+					<td class="gpu-clock">1365 MHz</td>
+					<td class="memory-clock">1188 MHz</td>
+					<td class="cores">10240 / 320 / 112</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce GT 1030</td>
+					<td class="chip">GP108</td>
+					<td class="release-date">May 17th, 2017</td>
+					<td class="bus">PCIe 3.0 x4</td>
+					<td class="memory">2 GB, GDDR5, 64 bit</td>
+					<td class="gpu-clock">1228 MHz</td>
+					<td class="memory-clock">1502 MHz</td>
+					<td class="cores">384 / 24 / 16</td>
+				</tr>
+            <tr>
+					<td class="model">Radeon RX 580</td>
+					<td class="chip">Polaris 20</td>
+					<td class="release-date">Apr 18th, 2017</td>
+					<td class="bus">PCIe 3.0 x16</td>
+					<td class="memory">8 GB, GDDR5, 256 bit</td>
+					<td class="gpu-clock">1257 MHz</td>
+					<td class="memory-clock">2000 MHz</td>
+					<td class="cores">2304 / 144 / 32</td>
+				</tr>
+            <tr>
+					<td class="model">Radeon RX 6600 XT</td>
+					<td class="chip">Navi 23</td>
+					<td class="release-date">Jul 30th, 2021</td>
+					<td class="bus">PCIe 4.0 x8</td>
+					<td class="memory">8 GB, GDDR6, 128 bit</td>
+					<td class="gpu-clock">1968 MHz</td>
+					<td class="memory-clock">2000 MHz</td>
+					<td class="cores">2048 / 128 / 64</td>
+				</tr>
+            <tr>
+					<td class="model">Radeon RX 570</td>
+					<td class="chip">Polaris 20</td>
+					<td class="release-date">Apr 18th, 2017</td>
+					<td class="bus">PCIe 3.0 x16</td>
+					<td class="memory">4 GB, GDDR5, 256 bit</td>
+					<td class="gpu-clock">1168 MHz</td>
+					<td class="memory-clock">1750 MHz</td>
+					<td class="cores">2048 / 128 / 32</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce GTX 1070</td>
+					<td class="chip">GP104</td>
+					<td class="release-date">Jun 10th, 2016</td>
+					<td class="bus">PCIe 3.0 x16</td>
+					<td class="memory">8 GB, GDDR5, 256 bit</td>
+					<td class="gpu-clock">1506 MHz</td>
+					<td class="memory-clock">2002 MHz</td>
+					<td class="cores">1920 / 120 / 64</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce RTX 3070 Ti</td>
+					<td class="chip">GA104</td>
+					<td class="release-date">May 31st, 2021</td>
+					<td class="bus">PCIe 4.0 x16</td>
+					<td class="memory">8 GB, GDDR6X, 256 bit</td>
+					<td class="gpu-clock">1575 MHz</td>
+					<td class="memory-clock">1188 MHz</td>
+					<td class="cores">6144 / 192 / 96</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce GTX 1080 Ti</td>
+					<td class="chip">GP102</td>
+					<td class="release-date">Mar 10th, 2017</td>
+					<td class="bus">PCIe 3.0 x16</td>
+					<td class="memory">11 GB, GDDR5X, 352 bit</td>
+					<td class="gpu-clock">1481 MHz</td>
+					<td class="memory-clock">1376 MHz</td>
+					<td class="cores">3584 / 224 / 88</td>
+				</tr>
+            <tr>
+					<td class="model">Radeon RX 6900 XT</td>
+					<td class="chip">Navi 21</td>
+					<td class="release-date">Oct 28th, 2020</td>
+					<td class="bus">PCIe 4.0 x16</td>
+					<td class="memory">16 GB, GDDR6, 256 bit</td>
+					<td class="gpu-clock">1825 MHz</td>
+					<td class="memory-clock">2000 MHz</td>
+					<td class="cores">5120 / 320 / 128</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce 210</td>
+					<td class="chip">GT218</td>
+					<td class="release-date">Oct 12th, 2009</td>
+					<td class="bus">PCIe 2.0 x16</td>
+					<td class="memory">512 MB, DDR3, 64 bit</td>
+					<td class="gpu-clock">520 MHz</td>
+					<td class="memory-clock">400 MHz</td>
+					<td class="cores">16-08-2004</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce GTX 550 Ti</td>
+					<td class="chip">GF116</td>
+					<td class="release-date">Mar 15th, 2011</td>
+					<td class="bus">PCIe 2.0 x16</td>
+					<td class="memory">1024 MB, GDDR5, 192 bit</td>
+					<td class="gpu-clock">900 MHz</td>
+					<td class="memory-clock">1026 MHz</td>
+					<td class="cores">192 / 32 / 24</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce GT 730</td>
+					<td class="chip">GK208B</td>
+					<td class="release-date">Jun 18th, 2014</td>
+					<td class="bus">PCIe 2.0 x8</td>
+					<td class="memory">1024 MB, GDDR5, 64 bit</td>
+					<td class="gpu-clock">902 MHz</td>
+					<td class="memory-clock">1253 MHz</td>
+					<td class="cores">384 / 32 / 8</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce GTX 1050</td>
+					<td class="chip">GP107</td>
+					<td class="release-date">Oct 25th, 2016</td>
+					<td class="bus">PCIe 3.0 x16</td>
+					<td class="memory">2 GB, GDDR5, 128 bit</td>
+					<td class="gpu-clock">1354 MHz</td>
+					<td class="memory-clock">1752 MHz</td>
+					<td class="cores">640 / 40 / 32</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce GTX 1660 SUPER</td>
+					<td class="chip">TU116</td>
+					<td class="release-date">Oct 29th, 2019</td>
+					<td class="bus">PCIe 3.0 x16</td>
+					<td class="memory">6 GB, GDDR6, 192 bit</td>
+					<td class="gpu-clock">1530 MHz</td>
+					<td class="memory-clock">1750 MHz</td>
+					<td class="cores">1408 / 88 / 48</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce GTX 1080</td>
+					<td class="chip">GP104</td>
+					<td class="release-date">May 27th, 2016</td>
+					<td class="bus">PCIe 3.0 x16</td>
+					<td class="memory">8 GB, GDDR5X, 256 bit</td>
+					<td class="gpu-clock">1607 MHz</td>
+					<td class="memory-clock">1251 MHz</td>
+					<td class="cores">2560 / 160 / 64</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce GTX 1660 Ti</td>
+					<td class="chip">TU116</td>
+					<td class="release-date">Feb 22nd, 2019</td>
+					<td class="bus">PCIe 3.0 x16</td>
+					<td class="memory">6 GB, GDDR6, 192 bit</td>
+					<td class="gpu-clock">1500 MHz</td>
+					<td class="memory-clock">1500 MHz</td>
+					<td class="cores">1536 / 96 / 48</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce GTX 760</td>
+					<td class="chip">GK104</td>
+					<td class="release-date">Jun 25th, 2013</td>
+					<td class="bus">PCIe 3.0 x16</td>
+					<td class="memory">2 GB, GDDR5, 256 bit</td>
+					<td class="gpu-clock">980 MHz</td>
+					<td class="memory-clock">1502 MHz</td>
+					<td class="cores">1152 / 96 / 32</td>
+				</tr>
+            <tr>
+					<td class="model">Radeon RX 560</td>
+					<td class="chip">Polaris 21</td>
+					<td class="release-date">Apr 18th, 2017</td>
+					<td class="bus">PCIe 3.0 x8</td>
+					<td class="memory">4 GB, GDDR5, 128 bit</td>
+					<td class="gpu-clock">1175 MHz</td>
+					<td class="memory-clock">1750 MHz</td>
+					<td class="cores">1024 / 64 / 16</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce RTX 2080 Ti</td>
+					<td class="chip">TU102</td>
+					<td class="release-date">Sep 20th, 2018</td>
+					<td class="bus">PCIe 3.0 x16</td>
+					<td class="memory">11 GB, GDDR6, 352 bit</td>
+					<td class="gpu-clock">1350 MHz</td>
+					<td class="memory-clock">1750 MHz</td>
+					<td class="cores">4352 / 272 / 88</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce GTX 980 Ti</td>
+					<td class="chip">GM200</td>
+					<td class="release-date">Jun 2nd, 2015</td>
+					<td class="bus">PCIe 3.0 x16</td>
+					<td class="memory">6 GB, GDDR5, 384 bit</td>
+					<td class="gpu-clock">1000 MHz</td>
+					<td class="memory-clock">1753 MHz</td>
+					<td class="cores">2816 / 176 / 96</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce GTX 950</td>
+					<td class="chip">GM206</td>
+					<td class="release-date">Aug 20th, 2015</td>
+					<td class="bus">PCIe 3.0 x16</td>
+					<td class="memory">2 GB, GDDR5, 128 bit</td>
+					<td class="gpu-clock">1024 MHz</td>
+					<td class="memory-clock">1653 MHz</td>
+					<td class="cores">768 / 48 / 32</td>
+				</tr>
+            <tr>
+					<td class="model">Radeon RX 550</td>
+					<td class="chip">Lexa</td>
+					<td class="release-date">Apr 20th, 2017</td>
+					<td class="bus">PCIe 3.0 x8</td>
+					<td class="memory">2 GB, GDDR5, 128 bit</td>
+					<td class="gpu-clock">1100 MHz</td>
+					<td class="memory-clock">1750 MHz</td>
+					<td class="cores">512 / 32 / 16</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce GTX 1650 SUPER</td>
+					<td class="chip">TU116</td>
+					<td class="release-date">Nov 22nd, 2019</td>
+					<td class="bus">PCIe 3.0 x16</td>
+					<td class="memory">4 GB, GDDR6, 128 bit</td>
+					<td class="gpu-clock">1530 MHz</td>
+					<td class="memory-clock">1500 MHz</td>
+					<td class="cores">1280 / 80 / 32</td>
+				</tr>
+            <tr>
+					<td class="model">Radeon RX 6700 XT</td>
+					<td class="chip">Navi 22</td>
+					<td class="release-date">Mar 3rd, 2021</td>
+					<td class="bus">PCIe 4.0 x16</td>
+					<td class="memory">12 GB, GDDR6, 192 bit</td>
+					<td class="gpu-clock">2321 MHz</td>
+					<td class="memory-clock">2000 MHz</td>
+					<td class="cores">2560 / 160 / 64</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce GTX 660</td>
+					<td class="chip">GK106</td>
+					<td class="release-date">Sep 6th, 2012</td>
+					<td class="bus">PCIe 3.0 x16</td>
+					<td class="memory">2 GB, GDDR5, 192 bit</td>
+					<td class="gpu-clock">980 MHz</td>
+					<td class="memory-clock">1502 MHz</td>
+					<td class="cores">960 / 80 / 24</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce RTX 3050</td>
+					<td class="chip">GA107</td>
+					<td class="release-date">2022</td>
+					<td class="bus">PCIe 4.0 x16</td>
+					<td class="memory">4 GB, GDDR6, 128 bit</td>
+					<td class="gpu-clock">1545 MHz</td>
+					<td class="memory-clock">1750 MHz</td>
+					<td class="cores">2304 / 72 / 40</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce GT 710</td>
+					<td class="chip">GK208B</td>
+					<td class="release-date">Mar 27th, 2014</td>
+					<td class="bus">PCIe 2.0 x8</td>
+					<td class="memory">2 GB, DDR3, 64 bit</td>
+					<td class="gpu-clock">954 MHz</td>
+					<td class="memory-clock">900 MHz</td>
+					<td class="cores">192 / 16 / 8</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce GTX 1660</td>
+					<td class="chip">TU116</td>
+					<td class="release-date">Mar 14th, 2019</td>
+					<td class="bus">PCIe 3.0 x16</td>
+					<td class="memory">6 GB, GDDR5, 192 bit</td>
+					<td class="gpu-clock">1530 MHz</td>
+					<td class="memory-clock">2001 MHz</td>
+					<td class="cores">1408 / 88 / 48</td>
+				</tr>
+            <tr>
+					<td class="model">Radeon Vega 8</td>
+					<td class="chip">Raven</td>
+					<td class="release-date">Feb 12th, 2018</td>
+					<td class="bus">IGP</td>
+					<td class="memory">System Shared</td>
+					<td class="gpu-clock">300 MHz</td>
+					<td class="memory-clock">System Shared</td>
+					<td class="cores">512 / 32 / 8</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce GTX 980</td>
+					<td class="chip">GM204</td>
+					<td class="release-date">Sep 19th, 2014</td>
+					<td class="bus">PCIe 3.0 x16</td>
+					<td class="memory">4 GB, GDDR5, 256 bit</td>
+					<td class="gpu-clock">1127 MHz</td>
+					<td class="memory-clock">1753 MHz</td>
+					<td class="cores">2048 / 128 / 64</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce GTX 770</td>
+					<td class="chip">GK104</td>
+					<td class="release-date">May 30th, 2013</td>
+					<td class="bus">PCIe 3.0 x16</td>
+					<td class="memory">2 GB, GDDR5, 256 bit</td>
+					<td class="gpu-clock">1046 MHz</td>
+					<td class="memory-clock">1753 MHz</td>
+					<td class="cores">1536 / 128 / 32</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce GTX 650</td>
+					<td class="chip">GK107</td>
+					<td class="release-date">Sep 6th, 2012</td>
+					<td class="bus">PCIe 3.0 x16</td>
+					<td class="memory">1024 MB, GDDR5, 128 bit</td>
+					<td class="gpu-clock">1058 MHz</td>
+					<td class="memory-clock">1250 MHz</td>
+					<td class="cores">384 / 32 / 16</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce GTS 450</td>
+					<td class="chip">GF106</td>
+					<td class="release-date">Sep 13th, 2010</td>
+					<td class="bus">PCIe 2.0 x16</td>
+					<td class="memory">1024 MB, GDDR5, 128 bit</td>
+					<td class="gpu-clock">783 MHz</td>
+					<td class="memory-clock">902 MHz</td>
+					<td class="cores">192 / 32 / 16</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce RTX 2070 SUPER</td>
+					<td class="chip">TU104</td>
+					<td class="release-date">Jul 9th, 2019</td>
+					<td class="bus">PCIe 3.0 x16</td>
+					<td class="memory">8 GB, GDDR6, 256 bit</td>
+					<td class="gpu-clock">1605 MHz</td>
+					<td class="memory-clock">1750 MHz</td>
+					<td class="cores">2560 / 160 / 64</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce RTX 2070</td>
+					<td class="chip">TU106</td>
+					<td class="release-date">Oct 17th, 2018</td>
+					<td class="bus">PCIe 3.0 x16</td>
+					<td class="memory">8 GB, GDDR6, 256 bit</td>
+					<td class="gpu-clock">1410 MHz</td>
+					<td class="memory-clock">1750 MHz</td>
+					<td class="cores">2304 / 144 / 64</td>
+				</tr>
+            <tr>
+					<td class="model">GeForce GTX 460</td>
+					<td class="chip">GF104</td>
+					<td class="release-date">Jul 12th, 2010</td>
+					<td class="bus">PCIe 2.0 x16</td>
+					<td class="memory">1024 MB, GDDR5, 256 bit</td>
+					<td class="gpu-clock">675 MHz</td>
+					<td class="memory-clock">900 MHz</td>
+					<td class="cores">336 / 56 / 32</td>
+				</tr>
+            <tr>
+					<td class="model">Radeon RX 6600</td>
+					<td class="chip">Navi 23</td>
+					<td class="release-date">Oct 13th, 2021</td>
+					<td class="bus">PCIe 4.0 x8</td>
+					<td class="memory">8 GB, GDDR6, 128 bit</td>
+					<td class="gpu-clock">1626 MHz</td>
+					<td class="memory-clock">1750 MHz</td>
+					<td class="cores">1792 / 112 / 64</td>
+				</tr>
+            			</tbody>
+		</table>
+		<br>
+		<center><h4>Scrape this data! All the best!</h4></center>
+	</body>
+	<script type="text/javascript">$('#sortTable').DataTable();</script>
+	<script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+</html>

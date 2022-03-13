@@ -1,0 +1,23 @@
+﻿-------------------------
+Bank: Data Dictionary
+-------------------------
+customer_id                                  int64              Unique ID of each customer of the bank.
+firstname                                    object             Firstname of the customer.
+lastname                                     object             Lastname of the customer.
+email_address                                object             Email Address of the customer.
+contact                                      object             Phone number of the customer.
+branch_id                                    int64              Branch ID of the bank.
+branch_latitude                              float64            Latitude value of the bank's location.
+branch_longitude                             float64            Longitude value of the bank's location.
+account_id                                   int64              Account number of the customer
+branch_city                                  object             Name of the city where the branch is located
+branch_state                                 object             Name of the state where the bank is located.
+support_query_id                             int64              Unique support query identification number.
+support_query_type                           object             Type of the support query.
+support_query_category                       int64              Category of the support query.
+support_representative_id                    int64              Support Representative (Bank's Employee) who is handling the support query.
+call_duration :                              int64        	    Call duration related to the support query.
+employee_id :                                int64              Employee ID of the support representative.
+employee_name :                              object             Name of the support representative.
+week_number :                                int64              Week Number when the support query got reported.
+support_query_time_in_days :                 int64              Time since the support query is open.
