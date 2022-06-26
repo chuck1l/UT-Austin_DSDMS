@@ -1,0 +1,39 @@
+store_id,manager_id,prod_cat_id,prod_cat_desc,inventory
+978,17892,10001,Animal Food,45
+978,17892,10002,Safety & Emergency,230
+978,17892,10003,Men's Clothing,78
+978,17892,10004,Women's Clothing,46
+978,17892,10005,Computer Components,37
+978,17892,10006,Electronic Accessories,51
+978,17892,10007,Food & Beverages,81
+978,17892,10008,Alcoholic Beverages,21
+978,17892,10009,Medicine & Supplements,46
+978,17892,10010,Beauty & Personal Care,6
+978,17892,10011,Home Decorations,1
+978,17892,10012,Jewelry,12
+978,17892,10013,Music,38
+978,17892,10014,Toys,46
+978,17892,10015,Optical,76
+978,17892,10016,Outdoor Cooking,15
+978,17892,10017,Fuels & Lubricants,89
+978,17892,10018,Baby Food,45
+978,17892,10019,Art & Craft,98
+649,29830,10001,Animal Food,39
+649,29830,10002,Safety & Emergency,98
+649,29830,10003,Men's Clothing,23
+649,29830,10004,Women's Clothing,16
+649,29830,10005,Computer Components,37
+649,29830,10006,Electronic Accessories,39
+649,29830,10007,Food & Beverages,89
+649,29830,10008,Alcoholic Beverages,78
+649,29830,10009,Medicine & Supplements,98
+649,29830,10010,Beauty & Personal Care,7
+649,29830,10011,Home Decorations,12
+649,29830,10012,Jewelry,2
+649,29830,10013,Music,47
+649,29830,10014,Toys,32
+649,29830,10015,Safety & Emergency,46
+649,29830,10016,Outdoor Cooking,35
+649,29830,10017,Fuels & Lubricants,35
+649,29830,10018,Baby Food,31
+649,29830,10019,Art & Craft,12

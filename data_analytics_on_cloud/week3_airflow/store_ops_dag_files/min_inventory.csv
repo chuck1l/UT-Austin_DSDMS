@@ -1,0 +1,20 @@
+﻿prod_cat_id,prod_cat_desc,min_inventory
+10001,Animal Food,50
+10002,Safety & Emergency,100
+10003,Men's Clothing,25
+10004,Women's Clothing,25
+10005,Computer Components,40
+10006,Electronic Accessories,50
+10007,Food & Beverages,100
+10008,Alcoholic Beverages,25
+10009,Medicine & Supplements,50
+10010,Beauty & Personal Care,10
+10011,Home Decorations,10
+10012,Jewelry,30
+10013,Music,45
+10014,Toys,30
+10015,Optical,45
+10016,Outdoor Cooking,20
+10017,Fuels & Lubricants,50
+10018,Baby Food,30
+10019,Art & Craft,60

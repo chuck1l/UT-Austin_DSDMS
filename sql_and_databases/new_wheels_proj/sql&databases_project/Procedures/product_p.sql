@@ -1,0 +1,22 @@
+-- Populate the product table with the data from temp_t (calling from quarterly dump SQL)
+
+DELIMITER $$
+CREATE PROCEDURE product_p()
+BEGIN
+	INSERT INTO vehdb.product_t(
+		PRODUCT_ID,
+		VEHICLE_MAKER,
+		VEHICLE_MODEL,
+		VEHICLE_COLOR,
+		VEHICLE_MODEL_YEAR,
+		VEHICLE_PRICE
+    )
+    SELECT DISTINCT
+		PRODUCT_ID,
+		VEHICLE_MAKER,
+		VEHICLE_MODEL,
+		VEHICLE_COLOR,
+		VEHICLE_MODEL_YEAR,
+		VEHICLE_PRICE
+	FROM vehdb.vehicle_t WHERE PRODUCT_ID NOT IN (SELECT DISTINCT PRODUCT_ID FROM vehdb.product_t);
+END;

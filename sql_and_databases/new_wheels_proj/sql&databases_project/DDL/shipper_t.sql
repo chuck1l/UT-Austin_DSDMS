@@ -1,0 +1,8 @@
+-- Normalizing the data, Shipper Information
+
+CREATE TABLE shipper_t (
+    SHIPPER_ID INTEGER,
+    SHIPPER_NAME VARCHAR(50),
+    SHIPPER_CONTACT_DETAILS VARCHAR(30),
+    PRIMARY KEY (SHIPPER_ID)
+);

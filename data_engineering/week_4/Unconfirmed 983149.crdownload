@@ -1,0 +1,32 @@
+import os
+import json
+import requests
+import time
+import datetime
+
+url = "https://api.alternative.me/v2/ticker/bitcoin/?convert=USD" 
+
+def initiate_json(url):
+    sess = requests.Session()
+    with sess.get(url, headers = None, stream = True) as response:
+        with open('data_stream.json', 'w+') as f:
+            json.dump(response.json(), f)
+            
+def get_stream(url):
+    sess = requests.Session()
+    with sess.get(url, headers = None, stream = True) as response:
+        with open('data_stream.json', 'r+') as f:
+            data = json.load(f)
+            if type(data) is list:
+                data = data
+            else:
+                data = [data]
+        data.append(response.json())
+        with open('data_stream.json', 'w+') as f:
+            json.dump(data, f)
+            
+initiate_json(url)
+while True:
+    print(f"Getting BTC price {datetime.datetime.now()}")
+    get_stream(url)
+    time.sleep(60)

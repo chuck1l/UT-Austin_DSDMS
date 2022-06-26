@@ -1,0 +1,5 @@
+fsspec
+gcsfs
+pymysql
+pandas
+numpy

@@ -1,0 +1,144 @@
+STATE,VEHICLE_MAKER,order_rank,order_volume
+Alabama,Dodge,1,5
+Alaska,Chevrolet,1,2
+Arizona,Pontiac,1,3
+Arizona,Cadillac,1,3
+Arkansas,Chevrolet,1,1
+Arkansas,GMC,1,1
+Arkansas,Mitsubishi,1,1
+Arkansas,Pontiac,1,1
+Arkansas,Suzuki,1,1
+Arkansas,Volkswagen,1,1
+California,Audi,1,6
+California,Nissan,1,6
+California,Chevrolet,1,6
+California,Dodge,1,6
+California,Ford,1,6
+Colorado,Chevrolet,1,5
+Connecticut,Volvo,1,2
+Connecticut,Chevrolet,1,2
+Connecticut,Mercury,1,2
+Connecticut,Maserati,1,2
+Delaware,Mitsubishi,1,2
+"District of Columbia",Chevrolet,1,4
+Florida,Toyota,1,7
+Georgia,Toyota,1,3
+Hawaii,Cadillac,1,1
+Hawaii,Ford,1,1
+Hawaii,GMC,1,1
+Hawaii,Nissan,1,1
+Hawaii,Pontiac,1,1
+Hawaii,Toyota,1,1
+Idaho,Dodge,1,2
+Illinois,Ford,1,3
+Illinois,Chevrolet,1,3
+Illinois,GMC,1,3
+Indiana,Mazda,1,4
+Iowa,Chevrolet,1,1
+Iowa,Chrysler,1,1
+Iowa,Dodge,1,1
+Iowa,Ford,1,1
+Iowa,Hyundai,1,1
+Iowa,Isuzu,1,1
+Iowa,Jeep,1,1
+Iowa,Mazda,1,1
+Iowa,Pontiac,1,1
+Iowa,Porsche,1,1
+Iowa,Subaru,1,1
+Kansas,Buick,1,1
+Kansas,Dodge,1,1
+Kansas,Ford,1,1
+Kansas,GMC,1,1
+Kansas,Honda,1,1
+Kansas,Lexus,1,1
+Kansas,Maserati,1,1
+Kansas,Mazda,1,1
+Kansas,Mercedes-Benz,1,1
+Kansas,Nissan,1,1
+Kansas,Saab,1,1
+Kansas,Suzuki,1,1
+Kansas,Volkswagen,1,1
+Kentucky,Acura,1,1
+Kentucky,Audi,1,1
+Kentucky,Mercedes-Benz,1,1
+Kentucky,Mercury,1,1
+Kentucky,Nissan,1,1
+Kentucky,Pontiac,1,1
+Kentucky,Ram,1,1
+Kentucky,Volvo,1,1
+Louisiana,BMW,1,2
+Louisiana,Ford,1,2
+Louisiana,Kia,1,2
+Louisiana,Nissan,1,2
+Louisiana,Pontiac,1,2
+Maine,Mercedes-Benz,1,1
+Maryland,Ford,1,5
+Massachusetts,Dodge,1,2
+Massachusetts,Chevrolet,1,2
+Michigan,Ford,1,3
+Minnesota,GMC,1,3
+Mississippi,Dodge,1,1
+Mississippi,Toyota,1,1
+Missouri,Chevrolet,1,4
+Montana,Chevrolet,1,1
+Montana,Dodge,1,1
+Montana,Mitsubishi,1,1
+Nebraska,Cadillac,1,1
+Nebraska,Chevrolet,1,1
+Nebraska,Mercedes-Benz,1,1
+Nebraska,Nissan,1,1
+Nebraska,Pontiac,1,1
+Nebraska,Toyota,1,1
+Nebraska,Volkswagen,1,1
+Nevada,Pontiac,1,3
+"New Hampshire",Chrysler,1,1
+"New Hampshire",Lexus,1,1
+"New Hampshire",Lincoln,1,1
+"New Jersey",Hyundai,1,2
+"New Jersey",Mercedes-Benz,1,2
+"New Mexico",Dodge,1,2
+"New York",Toyota,1,5
+"New York",Pontiac,1,5
+"North Carolina",Volvo,1,3
+"North Dakota",Ford,1,1
+"North Dakota",Hyundai,1,1
+Ohio,Chevrolet,1,6
+Oklahoma,Toyota,1,2
+Oklahoma,Mazda,1,2
+Oklahoma,Ferrari,1,2
+Oregon,Toyota,1,2
+Pennsylvania,Toyota,1,3
+"South Carolina",Acura,1,1
+"South Carolina",BMW,1,1
+"South Carolina",Buick,1,1
+"South Carolina",Dodge,1,1
+"South Carolina",Isuzu,1,1
+"South Carolina",Jaguar,1,1
+"South Carolina",Kia,1,1
+"South Carolina",Mazda,1,1
+"South Carolina",Mitsubishi,1,1
+Tennessee,Mazda,1,3
+Texas,Chevrolet,1,9
+Utah,Buick,1,1
+Utah,Chevrolet,1,1
+Utah,Dodge,1,1
+Utah,Isuzu,1,1
+Utah,Lincoln,1,1
+Utah,Maybach,1,1
+Utah,Oldsmobile,1,1
+Utah,Pontiac,1,1
+Utah,Subaru,1,1
+Utah,Volkswagen,1,1
+Vermont,Mazda,1,1
+Virginia,Ford,1,5
+Washington,Chevrolet,1,5
+"West Virginia",Mercedes-Benz,1,2
+Wisconsin,Acura,1,1
+Wisconsin,Cadillac,1,1
+Wisconsin,Chevrolet,1,1
+Wisconsin,Dodge,1,1
+Wisconsin,Honda,1,1
+Wisconsin,Mazda,1,1
+Wisconsin,Nissan,1,1
+Wisconsin,Pontiac,1,1
+Wyoming,Buick,1,1
