@@ -14,7 +14,7 @@ database_password = "root"
 # Slack Messages
 # --------------------------------------
 # Slack webhook link
-slack_webhook = 'https://hooks.slack.com/services/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'
+slack_webhook = 'place webhook here'
 
 # Function to send slack message
 def send_msg(text_string):
